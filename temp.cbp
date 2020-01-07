@@ -15,7 +15,8 @@
 					<Add option="-g" />
 				</Compiler>
 				<ExtraCommands>
-					<Add before="git add *" />
+					<Add before="git add *.c" />
+					<Add before="git add *.cbp" />
 				</ExtraCommands>
 			</Target>
 			<Target title="Release">
@@ -30,7 +31,8 @@
 					<Add option="-s" />
 				</Linker>
 				<ExtraCommands>
-					<Add before="git add *" />
+					<Add before="git add *.c" />
+					<Add before="git add *.cbp" />
 				</ExtraCommands>
 			</Target>
 		</Build>
